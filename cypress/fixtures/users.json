@@ -3,8 +3,59 @@
     "email": "admin@admin.com",
     "password": "admin123"
   },
+
   "invalidUser": {
     "email": "wrong@example.com",
     "password": "wrong123"
+  },
+
+  "invalidPassword": {
+    "email": "admin@admin.com",
+    "password": "admin12345678"
+  },
+
+  "blankEmail": {
+    "email": " ",
+    "password": "admin123"
+  },
+
+  "blankPassword": {
+    "email": "admin@admin.com",
+    "password": " "
+  },
+
+  "blankInputs": {
+    "email": " ",
+    "password": " "
+  },
+
+  "blankEmailInvalidPassword": {
+    "email": "  ",
+    "password": "wrong123"
+  },
+
+  "emailWithSpaces": {
+    "email": "  admin@admin.com  ",
+    "password": "admin123"
+  },
+
+  "passwordWithSpaces": {
+    "email": "admin@admin.com",
+    "password": "  admin123  "
+  },
+
+  "uppercaseEmail": {
+    "email": "ADMIN@ADMIN.COM",
+    "password": "admin123"
+  },
+
+  "longInput": {
+    "email": "aaaaaaaaaaaaaaa#@$$$$#%&*&^%$%*&aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+    "password": "aaaaaaaaaaaaaaaaaaa%^%&*^&^%#$^%&^*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+
+  "specialCharacters": {
+    "email": "!#$%^&*()@example.com",
+    "password": "!@#$%^&*()"
   }
 }
