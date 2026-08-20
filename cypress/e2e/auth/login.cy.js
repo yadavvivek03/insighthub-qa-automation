@@ -19,7 +19,6 @@ describe('InsightHub QA Automation - Login', () => {
 
     });
 
-
     it('should show error for invalid email and invalid password', () => {
 
         cy.fixture('users').then((users) => {
@@ -38,7 +37,6 @@ describe('InsightHub QA Automation - Login', () => {
         });
 
     });
-
 
     it('should show error for blank email and valid password', () => {
 
@@ -59,7 +57,6 @@ describe('InsightHub QA Automation - Login', () => {
 
     });
 
-
     it('should show error for valid email and invalid password', () => {
 
         cy.fixture('users').then((users) => {
@@ -78,7 +75,6 @@ describe('InsightHub QA Automation - Login', () => {
         });
 
     });
-
 
     it('should show error for blank email and password', () => {
 
@@ -99,7 +95,6 @@ describe('InsightHub QA Automation - Login', () => {
 
     });
 
-
     it('should show error for valid email and blank password', () => {
 
         cy.fixture('users').then((users) => {
@@ -118,7 +113,6 @@ describe('InsightHub QA Automation - Login', () => {
         });
 
     });
-
 
     it('should show error for blank email and invalid password', () => {
 
@@ -139,7 +133,6 @@ describe('InsightHub QA Automation - Login', () => {
 
     });
 
-
     it('should login successfully with leading and trailing spaces in email', () => {
 
         cy.fixture('users').then((users) => {
@@ -156,7 +149,6 @@ describe('InsightHub QA Automation - Login', () => {
         });
 
     });
-
 
     it('should handle password with leading and trailing spaces', () => {
 
