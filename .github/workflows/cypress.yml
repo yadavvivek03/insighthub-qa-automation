@@ -27,9 +27,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check application URL
-        run: |
-          curl -I -L --max-time 30 https://qa-practice.netlify.app/auth_ecommerce.html
-
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npx cypress run --browser chrome
+
+      - name: Upload Cypress screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          if-no-files-found: ignore

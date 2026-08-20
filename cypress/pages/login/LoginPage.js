@@ -1,9 +1,8 @@
 class LoginPage {
 
     visit() {
-        cy.visit('https://qa-practice.netlify.app/auth_ecommerce.html', {
-            failOnStatusCode: false,
-            timeout: 60000
+        cy.visit('/auth_ecommerce.html', {
+            failOnStatusCode: false
         });
 
         cy.get('#email', { timeout: 30000 })
@@ -25,6 +24,7 @@ class LoginPage {
     clickLogin() {
         cy.get('#submitLoginBtn')
             .should('be.visible')
+            .and('be.enabled')
             .click();
     }
 
