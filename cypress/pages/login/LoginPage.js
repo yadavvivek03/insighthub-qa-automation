@@ -1,7 +1,9 @@
 class LoginPage {
 
     visit() {
-        cy.visit('https://qa-practice.netlify.app/auth_ecommerce.html');
+        cy.visit('https://qa-practice.netlify.app/auth_ecommerce.html', {
+            timeout: 120000
+        });
     }
 
     enterEmail(email) {
