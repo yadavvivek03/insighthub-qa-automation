@@ -27,5 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check application URL
+        run: |
+          curl -I -L --max-time 30 https://qa-practice.netlify.app/auth_ecommerce.html
+
       - name: Run Cypress tests
         run: npx cypress run
