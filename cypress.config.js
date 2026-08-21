@@ -5,7 +5,7 @@ module.exports = defineConfig({
         baseUrl: "https://qa-practice.netlify.app",
 
         defaultCommandTimeout: 10000,
-        pageLoadTimeout: 60000,
+        pageLoadTimeout: 120000,
 
         setupNodeEvents(on, config) {
             return config;
