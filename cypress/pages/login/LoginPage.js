@@ -2,7 +2,8 @@ class LoginPage {
 
     visit() {
         cy.visit('/auth_ecommerce.html', {
-            failOnStatusCode: false
+            failOnStatusCode: false,
+            retryOnNetworkFailure: true
         });
 
         cy.get('#email', { timeout: 60000 })

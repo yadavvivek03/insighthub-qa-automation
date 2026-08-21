@@ -29,7 +29,7 @@ jobs:
 
       - name: Check application availability
         run: |
-          curl -I --max-time 30 https://qa-practice.netlify.app/auth_ecommerce.html
+          curl -I -L --max-time 30 https://qa-practice.netlify.app/auth_ecommerce.html
 
       - name: Run Cypress tests
         run: npx cypress run --browser chrome
