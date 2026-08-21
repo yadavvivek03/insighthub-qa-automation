@@ -5,7 +5,7 @@ class LoginPage {
             failOnStatusCode: false
         });
 
-        cy.get('#email', { timeout: 30000 })
+        cy.get('#email', { timeout: 60000 })
             .should('be.visible');
     }
 

@@ -7,6 +7,9 @@ module.exports = defineConfig({
         defaultCommandTimeout: 10000,
         pageLoadTimeout: 120000,
 
+        video: false,
+        screenshotOnRunFailure: true,
+
         setupNodeEvents(on, config) {
             return config;
         }
